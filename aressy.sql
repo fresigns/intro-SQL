@@ -67,9 +67,9 @@ quello che metto per primo ha la priorità.
 -- FROM shippings
 -- WHERE lower(status) = 'pending'
 
--- SELECT AVG(age)
+-- SELECT AVG(age)  /* AVG Average - media */
 -- FROM customers;
-/* AVG Average */
+
 
 -- SELECT MAX(age)
 -- FROM customers;
@@ -88,12 +88,20 @@ quello che metto per primo ha la priorità.
 -- FROM customers
 -- GROUP BY country;
 
--- SELECT item, SUM(amount)
+-- SELECT item, SUM(amount) /* amount ammontare */
 -- FROM orders
 -- GROUP BY item;
 
-SELECT customer_id, AVG(amount), MAX(amount)
-FROM orders
-GROUP BY customer_id
-ORDER BY AVG(amount) DESC
-LIMIT 2
+-- SELECT customer_id, AVG(amount)
+-- FROM orders
+-- GROUP BY customer_id
+-- ORDER BY AVG(amount) /* ordine ascendente come default */
+
+-- SELECT customer_id, AVG(amount), MAX(amount)
+-- FROM orders
+-- GROUP BY customer_id
+-- ORDER BY AVG(amount) DESC
+-- LIMIT 1
+
+
+
